@@ -1,0 +1,569 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+.section-padding{
+  padding: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar {
+background: #ffffff !important;
+padding: 15px 30px;
+box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+position: fixed;
+overflow: visible;
+top:0;
+right:0;
+left: 0;
+display: flex;
+align-items: center;
+z-index: 1000;
+}
+
+/* Logo */
+ .navbar-brand {
+color: #6bbcd1 !important;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: lowercase;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+color: #444 !important;
+font-size: 16px;
+font-weight: 500;
+margin: 0 8px;
+padding: 10px 15px !important;
+border-radius: 8px;
+transition: 0.3s;
+}
+
+/* Hover */
+.navbar-nav .nav-link:hover {
+color: #fff !important;
+background: #8ed8e8;
+}
+
+/* Active */
+.navbar-nav .nav-link.active {
+color: #fff !important;
+background: #6bbcd1;
+}
+
+/* Dropdown */
+.dropdown-menu {
+border: none;
+border-radius: 12px;
+padding: 10px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Dropdown items */
+.dropdown-item {
+padding: 10px 15px;
+border-radius: 7px;
+color: #444;
+transition: 0.3s;
+}
+
+/* Dropdown hover */
+.dropdown-item:hover {
+background: #e4f8fc;
+color: #4aa6bd;
+}
+
+/* Search input */
+.navbar .form-control {
+border: 1px solid #b9e5ee;
+border-radius: 20px;
+padding: 9px 15px;
+}
+
+.navbar .form-control:focus {
+border-color: #6bbcd1;
+box-shadow: 0 0 0 3px rgba(107, 188, 209, 0.15);
+}
+
+/* Search button */
+.navbar .btn-outline-success {
+color: #fff;
+background: #6bbcd1;
+border: 1px solid #6bbcd1;
+border-radius: 20px;
+padding: 8px 20px;
+transition: 0.3s;
+}
+
+.navbar .btn-outline-success:hover {
+background: #4aa6bd;
+border-color: #4aa6bd;
+}
+
+/* ------header------- */
+header{
+    margin: 30px;
+}
+.swiper1{
+  background-image: url(../img/OIP.webp);
+ 
+}
+.swiper2{
+  background-image: url(../img/OIP\ \(1\).webp);
+  
+}
+.swiper3{
+  background-image: url(../img/OIP\ \(2\).webp);
+  
+  
+}
+.swiper1, .swiper2, .swiper3{
+  /* background-size: 90%; */
+  background-size: cover;
+  background-position:center ;
+  background-repeat: no-repeat;
+   width: 100%;
+  height: 550px;
+   object-fit: cover;
+   border-radius: 15px;
+}
+ .title-swiper{
+ margin-top: 170px;
+}
+.swiper1 .title-swiper{
+  text-align: center;
+  color: rgb(12, 3, 6);
+  font-weight: bold;
+  font-size: 30px;
+  text-transform:capitalize;
+}
+.swiper2  .title-swiper,
+.swiper3  .title-swiper{
+ padding: 40px;
+ font-weight:700;
+  font-size: 35px;
+  text-transform:capitalize;
+  color: rgb(13, 13, 14);
+}
+
+ .btn{
+ color: #383814;
+background: #6bbcd1;
+border: 1px solid #6bbcd1;
+border-radius: 20px;
+padding: 8px 20px;
+transition: 0.3s;
+font-size: 20px;
+}
+ .btn:hover {
+background: #4aa6bd;
+border-color: #060808;
+}
+ /* ----about------- */
+      .info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+      }
+ .imgs{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+    animation-name: y;
+    animation-duration: 1S;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+@keyframes y{
+    0%{
+        transform:translateX(-500PX) ;
+    }
+   100%{
+      transform:translateX(0) ;  
+    }
+}
+ 
+ .imgs .img2 img{
+  margin-top: 150px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+ }
+ .imgs .img1 img{
+  border-radius: 15px;
+  box-shadow: 0 25px 50px rgba(1, 18, 32, 0.55);
+ }
+  .imgs img{
+  width:50%;
+  height: auto;
+}
+  .img1,  .img2{
+  width:300px;
+  }
+ .img1 img,  .img2 img{
+  width: 100%;
+ }
+   
+.info  .title-about{
+       align-items: start;
+       text-align: start;
+       font-size: 15px;
+       color: rgb(75, 72, 72);
+       margin-left: 40px;
+       line-height: 2.5;
+     animation-name: x;
+    animation-duration: 1S;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+@keyframes x{
+    0%{
+        transform:translatex(500PX) ;
+    }
+   100%{
+      transform:translatex(0) ;  
+    }
+}
+      
+      .info .text-content h2{
+        font-family: "Edu QLD Hand", cursive;
+        font-weight: bold;
+        color: crimson;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -50px;
+        font-size: 35px;
+}
+
+/* -----swiper2------ */
+.container p{
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(199, 165, 120);
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 120px;
+}
+      .swiper-slide {
+        height: 300px;
+        line-height: 300px;
+      }
+      
+      .slider1{
+        margin-top: 30px;
+        border: 2px solid silver;
+        width: 300px;
+       max-height: 430px;
+       border-radius:20px ;
+      }
+      .slider1 .img img {
+        width:100%;
+        height: 120%;
+      }
+       .slider1  .img{
+        position: relative !important;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+         border-radius:15px ;
+         overflow: hidden;
+       }
+      .slider1 .info-proudect h5{
+       text-align: center;
+        margin-top: 0;
+        padding: 10px 5px;
+        color: rgb(61, 63, 161);
+      }
+      .slider1 .info-proudect .price{
+       text-align: center;
+        margin-top: -120px;
+        padding: 10px 10px;
+        color: rgb(168, 49, 49);
+      }
+/* -----cards------ */
+.grid-card{
+  margin-top: 100px;
+ ;
+}
+.cards{
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+  margin: 20px;
+  padding: 40px;
+  border: #b9e5ee 2px solid;
+  transition: all .3s;
+  border-radius: 10px
+
+}
+ .cards:hover{
+ transform: scaleX(0.9);
+ cursor: pointer;
+}
+.grid-card .main-titel{
+  margin-left: 15px;
+   font-family: "Quintessential", serif;
+   font-weight: 400;
+   color: rgb(46, 42, 8);
+   letter-spacing: 1px;
+  text-shadow: 2px  3px 5px;
+  
+}
+.cards .card-main-text{
+  color: chartreuse;
+  font-family: "Edu QLD Hand", cursive;
+}
+.cards .card-info{
+  font-weight: bold;
+}
+/*  */
+.swiper-wrapper img{
+  width: 300px;
+}
+
+      /* -----siller------- */
+ .siller{
+  transition: all 0.3 ease-out;
+ }
+       
+.siller .img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 25px;
+  display: block;
+}
+.siller .img {
+  position: relative !important;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.siller .img .show,
+ .slider1 .img .show{
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: rgba(48, 47, 47, 0.75);
+  color: #fff;
+  padding: 150rem;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+.siller .img:hover .show ,
+.slider1 .img:hover .show {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.show,
+.slider1 .show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siller-proudect h5 , .price{
+text-align: center;
+color: rgb(22, 70, 22);
+}
+
+.siller {
+  position: relative;
+  border: 2px solid transparent; 
+  border-radius: 20px;
+  padding: 20px 15px;
+  text-align: center;
+  background-color: #fff;
+  overflow: visible; 
+  margin-top: 50px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55); ;
+
+}
+
+.siller .img {
+  position: relative;
+  width: 95%;            
+  margin: -60px auto 10px; 
+  border-radius: 20px;
+  overflow: hidden;     
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+/* -----footer---- */
+.cover .image img{
+  width: 100%;
+  height: 450px;
+}
+.cover img{
+  margin-top: 200px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.cover .image{
+  position: relative;
+}
+.log{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  padding: 40px;
+  margin-top: -90px;
+  
+}
+.log .title-footer{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+}
+.log .brand{
+  font-size: 50px;
+  text-decoration: none;
+  color: darkblue;
+}
+.log .brand,
+.navbar-brand{
+   font-family: "Isometra", serif;
+}
+.contact i:hover{
+  color: #0d1770;
+  cursor: pointer;
+}
+.ul-links{
+  position: absolute;
+  bottom: 10%;
+  left: 130%;
+  padding-left: 100px;
+  line-height: 2;
+  font-size: 20px;
+  text-transform: capitalize;
+
+}
+.ul-links li:hover{
+  color: #173847;
+  border-bottom: 2px solid sienna;
+  cursor: pointer;
+}
+ /* Mobile */
+@media (max-width: 991px) {
+.navbar-nav {
+margin-top: 15px;
+}
+
+.navbar .form-control {
+margin-top: 10px;
+}
+
+.navbar .btn-outline-success {
+margin-top: 10px;
+}
+.title-swiper{
+  text-align: center;
+ align-items: center;
+}
+.info{
+  display: block;
+}
+.imgs .img2 img{
+  margin-top: 0;
+}
+.text-content h2{
+  margin-top: 30px;
+}
+/* 1. الحاوية الرئيسية لجعل كل العناصر تحت بعضها */
+.cover .image {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* ترتيب جميع العناصر رأسياً تحت بعض */
+  align-items: center;    /* محاذاة العناصر في المنتصف أفقياً */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* 2. الصورة */
+.cover .image img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  
+}
+
+.log {
+  position: relative; 
+  top: auto;
+  right: auto;
+  left: auto;
+  transform: none;
+
+  width: 100%;
+}
+
+.log .brand {
+  font-size: 36px;
+  text-decoration: none;
+  color: darkblue;
+  font-family: "Isometra", serif;
+  display: block;
+margin-top: -390px;
+}
+
+.log .title-footer {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+
+.ul-links {
+  position: relative; 
+  top: auto;
+  left: auto;
+  padding: 0;
+  margin: 15px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px; 
+}
+
+.ul-links li {
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: color 0.3s ease, border 0.3s ease;
+}
+
+.ul-links li:hover {
+  color: #173847;
+  border-bottom: 2px solid sienna;
+  cursor: pointer;
+}
+
+.contact i:hover {
+  color: #0d1770;
+  cursor: pointer;
+}
+} 
+
+/* ---------- */
+
